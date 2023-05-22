@@ -114,8 +114,36 @@
   gap: 32px;
 }
 
+.catalogue__room,
+.catalogue__room img {
+  max-width: 450px;
+}
+
 .catalogue__room {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.catalogue__highlight {
   position: relative;
+}
+
+.catalogue__name {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.catalogue__price {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--primary);
+}
+
+.catalogue__description {
+  color: var(--gray-300);
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .catalogue__stars {
@@ -139,7 +167,6 @@
 .catalogue img {
   border-radius: 20px;
   width: 100%;
-  max-width: 450px;
 }
 
 .location {
