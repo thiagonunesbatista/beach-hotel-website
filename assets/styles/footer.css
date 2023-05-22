@@ -1,0 +1,32 @@
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+.footer {
+  border-top: 1px solid var(--gray-900);
+  padding: 80px 8px;
+}
+
+.footer__description {
+  max-width: 360px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer__social-media i {
+  height: 20px;
+  width: 20px;
+}

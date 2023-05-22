@@ -1,0 +1,32 @@
+.navbar {
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 8px 20px;
+  width: 100%;
+  background-color: var(--primary-transparent);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul a {
+  color: var(--white);
+  padding: 16px 0;
+}
+
+.navbar__logo,
+.navbar__logo img {
+  width: 36px;
+  height: 36px;
+}
