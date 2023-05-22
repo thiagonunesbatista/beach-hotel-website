@@ -124,6 +124,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 32px;
 }
 
@@ -215,6 +216,7 @@
 
   .catalogue__items {
     flex-direction: row;
+    align-items: initial;
   }
 
   .services__item:nth-child(odd) {
