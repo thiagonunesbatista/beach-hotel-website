@@ -12,8 +12,10 @@
 
 .navbar .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -30,4 +32,10 @@
 .navbar__logo img {
   width: 36px;
   height: 36px;
+}
+
+@media (min-width: 768px) {
+  .navbar .container {
+    justify-content: space-between;
+  }
 }
