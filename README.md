@@ -18,7 +18,7 @@
 
 ## Technologies
 
-This project was built with some vanila languages and programming methodologies.
+This project was built with some vanilla languages and programming methodologies.
 
 ### Methodologies
 
