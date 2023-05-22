@@ -1,12 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beach Hotel</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/navbar.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/marketing/logo.png"
+    />
+    <title>Wave Hotel</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#header" class="navbar__logo">
+          <img src="/assets/images/marketing/logo-transparent.png" />
+        </a>
+
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+
+        <button class="button button--primary">Book Now</button>
+      </div>
+    </nav>
+
+    <header id="header" class="hero-header">
+      <div class="container">
+        <h1>The 5 Stars hotel in the city</h1>
+      </div>
+    </header>
+
+    <section id="services" class="services container">
+      <div class="section-title services__title">
+        <h2>Services</h2>
+        <p>
+          Welcome to our hotel, where luxury meets comfort and impeccable
+          service awaits you. We take pride in offering a range of exceptional
+          services tailored to exceed your expectations and make your stay truly
+          unforgettable.
+        </p>
+      </div>
+
+      <div class="services__item">
+        <img
+          src="./assets/images/services/hotel-restaurant.jpg"
+          alt="hotel bar"
+        />
+
+        <div class="services__description">
+          <h3>Restaurant</h3>
+
+          <span class="services__schedule">
+            <p>
+              <i class="fa-solid fa-sun"></i>
+              11:00 AM - 2:00PM
+            </p>
+            <p><i class="fa-solid fa-moon"></i>07:00 PM - 10:00 PM</p>
+          </span>
+
+          <p>
+            Savor a culinary journey like no other at our renowned restaurants.
+            Our expert chefs blend local flavors with international influences,
+            delivering a tantalizing fusion of tastes that will delight even the
+            most discerning palates. From gourmet cuisine to casual dining
+            options, we offer an array of culinary experiences to suit every
+            preference.
+          </p>
+        </div>
+      </div>
+
+      <div class="services__item">
+        <img src="./assets/images/services/hotel-pub.jpg" alt="hotel bar" />
+
+        <div class="services__description">
+          <h3>Bar</h3>
+
+          <span class="services__schedule">
+            <p><i class="fa-solid fa-clock"></i> 08:00 AM - 10:00 PM</p>
+          </span>
+
+          <p>
+            our bar offers a vibrant and social atmosphere where guests can
+            unwind and indulge in their favorite beverages. Whether you're in
+            the mood for a classic cocktail, a glass of fine wine, or a
+            refreshing craft beer, our skilled bartenders are ready to create
+            the perfect drink to satisfy your palate
+          </p>
+        </div>
+      </div>
+
+      <div class="services__item">
+        <img
+          src="./assets/images/services/hotel-gym.jpg"
+          alt="hotel restaurant"
+        />
+
+        <div class="services__description">
+          <h3>Gym</h3>
+
+          <span class="services__schedule">
+            <p><i class="fa-solid fa-clock"></i> 06:00 AM - 10:00 PM</p>
+          </span>
+
+          <p>
+            Our gym creates an energizing atmosphere where you can exercise at
+            your own pace. Our knowledgeable staff is always available to assist
+            you and ensure a safe and fulfilling workout. Take advantage of our
+            hotel gym and maintain your fitness routine while enjoying your stay
+            with us!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="book-cta">
+      <h2>An Amazing Experience</h2>
+
+      <button class="button button--primary">Book now</button>
+    </aside>
+
+    <section id="rooms" class="catalogue">
+      <div class="section-title catalogue__title">
+        <h2>Luxury Accommodations</h2>
+        <p>
+          Each room and suite is a haven of relaxation, boasting tasteful décor,
+          high-quality furnishings, and an array of thoughtful amenities. Our
+          accommodations are meticulously designed to provide a haven of
+          relaxation and sophistication for our esteemed guests.
+        </p>
+      </div>
+
+      <div class="catalogue__items">
+        <div>
+          <div class="catalogue__room">
+            <span class="catalogue__stars">
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </span>
+
+            <img
+              src="./assets/images/rooms/hotel-room-1.jpg"
+              alt="Hotel room 1"
+            />
+          </div>
+
+          <p>Luxury Room 1</p>
+          <p>$ 100 /night</p>
+        </div>
+
+        <div class="catalogue__room">
+          <span class="catalogue__stars">
+            <i class="fa-solid fa-star"></i>
+            4.9
+          </span>
+
+          <img
+            src="./assets/images/rooms/hotel-room-2.jpg"
+            alt="Hotel room 2"
+          />
+        </div>
+
+        <div class="catalogue__room">
+          <span class="catalogue__stars">
+            <i class="fa-solid fa-star"></i>
+            5.0
+          </span>
+
+          <img
+            src="./assets/images/rooms/hotel-room-3.jpg"
+            alt="Hotel room 3"
+          />
+        </div>
+
+        <div class="catalogue__room">
+          <span class="catalogue__stars">
+            <i class="fa-solid fa-star"></i>
+            4.7
+          </span>
+
+          <img
+            src="./assets/images/rooms/hotel-room-4.jpg"
+            alt="Hotel room 4"
+          />
+        </div>
+      </div>
+    </section>
+
+    <aside class="book-cta">
+      <h2>An Amazing Experience</h2>
+
+      <button class="button button--primary">Book now</button>
+    </aside>
+
+    <section id="location" class="location container">
+      <div class="section-title">
+        <h2>Location</h2>
+
+        <p>
+          Our hotel's prime location ensures that you're at the center of it
+          all, allowing you to make the most of your stay and create
+          unforgettable memories.
+        </p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6783.919752194337!2d-52.346056524260746!3d-31.771580275148782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b5be08c39731%3A0x644b62f2bc9bddd5!2sSenac%20Faculty%20of%20Technology%20Pelotas!5e0!3m2!1sen!2sbr!4v1684595277414!5m2!1sen!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__description">
+          <p>Beach Hotel</p>
+          <p>
+            Indulge in a symphony of opulence and tranquility at our exquisite
+            hotel, where luxury meets serenity to elevate your stay to
+            extraordinary heights
+          </p>
+
+          <i class="fa-regular fa-copyright"></i>
+          2023. All rights reserved
+        </div>
+
+        <div class="footer__contact">
+          <p>Contact Us</p>
+
+          <div class="footer__social-media">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
