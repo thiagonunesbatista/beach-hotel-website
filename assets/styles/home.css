@@ -1,0 +1,181 @@
+.section-title {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.hero-header {
+  height: 100vh;
+  width: 100%;
+  background: url('../images/hotel-pool-from-the-top.jpg');
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-header h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  line-height: 4.375rem;
+}
+
+.services {
+  gap: 80px;
+  align-items: center;
+  padding: 160px 16px;
+}
+
+.services,
+.services__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__title {
+  text-align: center;
+  max-width: 768px;
+}
+
+.services__items {
+  gap: 120px;
+}
+
+.services img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__description {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  padding: 12px 0;
+  justify-content: center;
+}
+
+.services__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.services__schedule p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.book-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/beach/beach-view.jpg');
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  gap: 24px;
+}
+
+.book-cta h2 {
+  color: var(--white);
+  text-align: center;
+}
+
+.catalogue {
+  padding: 160px 0;
+  gap: 80px;
+}
+
+.catalogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogue__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.catalogue__room {
+  position: relative;
+}
+
+.catalogue__stars {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  backdrop-filter: blur(2px);
+  background: var(--white);
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.catalogue__stars i {
+  width: 16px;
+  height: 16px;
+  color: var(--primary);
+}
+
+.catalogue img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 0;
+  gap: 80px;
+}
+
+.location iframe {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding: 160px 0;
+  }
+
+  .services__items {
+    flex-direction: row;
+  }
+
+  .services__description {
+    padding: 24px 56px;
+  }
+
+  .services__item {
+    flex-direction: row;
+  }
+
+  .catalogue__items {
+    flex-direction: row;
+  }
+
+  .services__item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
