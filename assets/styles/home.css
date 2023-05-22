@@ -7,28 +7,42 @@
   gap: 8px;
 }
 
+.stairs-parallax {
+  background-image: url('../images/beach/beach-stairs.jpg');
+}
+
 .hero-header {
-  height: 100vh;
-  width: 100%;
-  background: url('../images/hotel-pool-from-the-top.jpg');
+  background-image: url('../images/hotel-pool-from-the-top.jpg');
   display: flex;
   align-items: center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero-header h1 {
   color: var(--white);
   font-size: 3.5rem;
   line-height: 4.375rem;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-header ~ * {
+  z-index: 1;
+  position: relative;
+}
+
+.services,
+.catalogue,
+.location {
+  padding: 80px 16px;
 }
 
 .services {
   gap: 80px;
   align-items: center;
-  padding: 160px 16px;
 }
 
 .services,
@@ -96,7 +110,6 @@
 }
 
 .catalogue {
-  padding: 160px 0;
   gap: 80px;
 }
 
@@ -173,7 +186,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 160px 0;
   gap: 80px;
 }
 
@@ -182,8 +194,10 @@
 }
 
 @media (min-width: 768px) {
-  .services {
-    padding: 160px 0;
+  .services,
+  .catalogue,
+  .location {
+    padding: 100px 16px;
   }
 
   .services__items {
@@ -191,11 +205,12 @@
   }
 
   .services__description {
-    padding: 24px 56px;
+    padding: 12px 28px;
   }
 
   .services__item {
     flex-direction: row;
+    gap: 16px;
   }
 
   .catalogue__items {
@@ -204,5 +219,11 @@
 
   .services__item:nth-child(odd) {
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__description {
+    padding: 24px 56px;
   }
 }
